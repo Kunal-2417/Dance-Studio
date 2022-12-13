@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One', cursive;
+}
+body::before {
+    content: "";
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    
+}
+#logo{
+    display: flex;
+    color: #fff;
+    align-items: center;
+
+}
+#logo img{
+    height: 3rem;
+}
+nav {
+    background-color:rgb(44 166 171);
+    padding: 0px 5px;
+    margin-top: 0%;
+    color: aliceblue;
+    font-size: large\;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+#navbar li {
+    font-size: x-large;
+    list-style: none;
+    padding: 0px 17px;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1px 13px;
+        /* transition: .2s ease-in-out 0s; */
+}
+#navbar a:hover{
+    color:black;
+        transform: scale(1.25);
+}
+
+
+
+#introSection{
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: aliceblue;
+        font-size: 5rem;
+        width: 100%;
+        height: 500px;
+        z-index: -1;
+        top:5rem;
+        /* position: absolute; */
+        background: url('/static/br.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        opacity: 0.9;
+}
+#introSection .small{
+    font-size: 1.5rem;
+}
+#missionSection
+{
+    background-color: #9dd4d2;
+    padding-bottom: 2rem;
+
+
+}
+#missionSection h2{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 3rem;
+    color: #063e4f;
+
+}
+/* CARD */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 5vw;
+            padding: 0;
+            list-style-type: none;
+        }
+    
+        .card {
+            position: relative;
+            display: block;
+            height: 100%;
+            border-radius: calc(var(--curve) * 1px);
+            overflow: hidden;
+            text-decoration: none;
+            background-color: black;
+        }
+    
+        .card__image {
+            width: 100%;
+            height: auto;
+        }
+    
+        .card__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            border-radius: calc(var(--curve) * 1px);
+            background-color: var(--surface-color);
+            transform: translateY(100%);
+            transition: .2s ease-in-out;
+        }
+    
+        .card:hover .card__overlay {
+            transform: translateY(0);
+        }
+    
+        .card__header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            padding: 2em;
+            border-radius: calc(var(--curve) * 1px) 0 0 0;
+            background-color: var(--surface-color);
+            transform: translateY(-100%);
+            transition: .2s ease-in-out;
+        }
+    
+        .card__arc {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            z-index: 1;
+        }
+    
+        .card__arc path {
+            fill: var(--surface-color);
+            d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+        }
+    
+        .card:hover .card__header {
+            transform: translateY(0);
+        }
+    
+        .card__thumb {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    
+        .card__title {
+            font-size: 1.5em;
+            margin: 0 0 .3em;
+            color:#247189;
+        }
+        
+        .card__tagline {
+            display: block;
+            margin: 1em 0;
+            font-family: "MockFlowFont";
+            font-size: .8em;
+            color: #D7BDCA;
+        }
+        
+        
+    
+        .card__description {
+            padding: 0 2em 2em;
+            margin: 0;
+            color: #2b99b2;
+            font-family: "MockFlowFont";
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+/* CADR */
+
+#sponserSection{
+    height: 200px;
+    background-color: #a3a9a9;
+    padding-top: 1rem;
+}
+#sponserSection h2{
+    text-align: center;
+}
+#sponsors{
+    display: flex;
+    height: 30rem;
+    
+}
+#sponsors .spimg{
+    
+    align-items: center;
+    height: 5rem;
+    margin:2rem
+}
+#footer{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}

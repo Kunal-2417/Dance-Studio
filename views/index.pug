@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    title Kunal Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="../static/logo.png")
+                | KDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About] 
+            li #[a(href="/") Class info] 
+            li #[a(href="/") Services]  
+            li #[a(href="/") Contact us] 
+    section#introSection
+        div  Welcome to our Dance Academy 
+        
+        div.small ANY BODY CAN DANCE 
+
+
+    section#missionSection
+        h2 Our Mission
+        <div>
+            <ul class="cards">
+            <li>
+                <a href="" class="card">
+                <img src="../static/card_1.jpg" class="card__image" alt="" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                    <div class="card__header-text">
+                        <h3 class="card__title">Dance Performnce</h3>            
+                    </div>
+                    </div>
+                    <p class="card__description">We believe each dancer has the ability to increase her/his physical, emotional, and intellectual well-being through our dance programs.</p>
+                </div>
+                </a>      
+            </li>
+            <li>
+                <a href="" class="card">
+                <img src="../static/card_2.jpg" class="card__image" alt="" />
+                <div class="card__overlay">        
+                    <div class="card__header">
+                    <div class="card__header-text">
+                        <h3 class="card__title">Dance the way you like</h3>
+                    </div>
+                    </div>
+                    <p class="card__description">Great dancers are not great because of their technique, they are great because of their passion.</p>
+                </div>
+                </a>
+            </li>
+           
+            <li>
+                <a href="" class="card">
+                <img src="../static/card_3.jpg" class="card__image" alt="" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                    <div class="card__header-text">
+                        <h3 class="card__title">Expert teaching</h3>
+                    </div>          
+                    </div>
+                    <p class="card__description">Dance is a daily exercise until you learn the right steps.One thing we learned as a dancer is preserverance</p>
+                </div>
+                </a>
+            </li>    
+            </ul>
+        </div>
+
+
+    section#sponserSection 
+        h2 Our Sponsors
+        div#sponsors
+            img(src="../static/spimg_1.png", alt="Sponsor image", class="spimg") 
+            img(src="../static/spimg_2.jpg", alt="Sponsor image", class="spimg") 
+            img(src="../static/spimg_3.png", alt="Sponsor image", class="spimg") 
+            img(src="../static/spimg_4.jpg", alt="Sponsor image", class="spimg") 
+            img(src="../static/spimg_5.jpg", alt="Sponsor image", class="spimg") 
+
+    section#footer 
+        | Copyright ⓒ 2020 KunalDanceAcademy.com | All right reserved
+            
+    script
+      include ../static/index.js
